@@ -1,0 +1,119 @@
+.div-register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2b2b2b;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px;
+  background-color: #F9F9F9;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-register h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #3F3D56;
+}
+
+.form-register input[type="text"],
+.form-register input[type="email"],
+.form-register input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #3F3D56;
+  font-size: 1rem;
+}
+
+.form-register input[type="text"]::placeholder,
+.form-register input[type="email"]::placeholder,
+.form-register input[type="password"]::placeholder {
+  text-align: center;
+}
+
+.form-register button[type="button"] {
+  background-color: #9624c4;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-register button[type="button"]:hover {
+  background-color: #91275c;
+}
+
+.form-register button[type="button"]:active {
+  transform: translateY(2px);
+}
+
+.form-register button[type="button"]:focus {
+  outline: none;
+}
+
+.form-register a {
+  color: #9624c4;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.form-register a:hover {
+  text-decoration: underline;
+}
+
+.form-register input[type="password"].password-confirm {
+  border: 1px solid #E5E5E5;
+}
+
+.form-register input[type="password"].password-confirm:focus {
+  border: 1px solid #E5E5E5;
+}
+
+.form-register input[type="password"].password-confirm.warning {
+  border: 1px solid #ff0000;
+}
+
+.form-register input[type="password"].password-confirm.warning:focus {
+  border: 1px solid #ff0000;
+}
+
+.password-confirm + .password-confirm-message {
+  display: none;
+  font-size: 0.8rem;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.password-confirm.warning + .password-confirm-message {
+  display: block;
+}
+
+.password-confirm-match + .password-confirm-message {
+  display: block;
+  color: #00cc00;
+}
+
+.warning-message {
+  color: red;
+}
